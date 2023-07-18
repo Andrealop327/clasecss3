@@ -1,41 +1,79 @@
 body{
-    display: inline;
-    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    /*    flex-direction: column-reverse; se utiliza para cambiar la posicion del contendo de forma invertida  */
+    background-color: rgb(173, 95, 245);
     font-size: 30px;
+    padding: 0px;
+    margin: 0px;
 }
 p{
     font-size: 20px;
     
 }
+/*   Formas de selección de etiquetas   */
 #MiParrafo{
     background-color: rgb(179, 132, 223);
     font-size: 40px;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+
 }
 
 .parrafo3{
    font-size: 25;  
    flex-direction: column;
+   text-align: left;
+   margin: 30px;
 
 }
 
 div p {
-    color: rgb(88, 88, 240);
+    color: rgb(25, 25, 43);
+    text-align: right;
 }
 
 h1 , p {
     font-family: 'Times New Roman', Times, serif;
-    color: dimgrey;
+    color: rgb(228, 209, 209);
+    margin:50px;
 }
 
 [name]{
     font-family: Arial, Helvetica, sans-serif;
 
 }
+[pepe]{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    border: 3px solid     rgb(137, 92, 209); 
+    display: inline;
+
+}
+[pepe_grillo]{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    border: 3px solid     rgb(137, 92, 209); 
+    display: inline;
+
+}
 
 [diferenteparrafo]{
     margin: 15px;
-    border: 1px solid red;
+    border: 3px solid red;
     padding: 10px;
 }
 
-@media screen and (min-width: 400px) and (max-width:700px){}
+@media screen and (min-width: 400px) and (max-width:700px){
+
+/*    Esta se utiliza para indicar o establecer que parametro dar a
+      las etiquetas si cumplen con ciertas caracteristicas  y hacerlo mas responsivo*/
+    body{
+        flex-direction: column;
+
+        
+    }
+}
